@@ -6,7 +6,7 @@ module YamlBuddy
   # def take_yaml(yaml) : takes a yaml string and converts it into a data structure in @data.
 
   def take_yaml(yaml)
-    @data = YAML.safe_load(yaml)
+    @data = YAML.load(yaml)
   end
 
   # def to_yaml : converts any data in @data into a yaml string.
